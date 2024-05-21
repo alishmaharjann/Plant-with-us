@@ -1,0 +1,576 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    position: fixed; /* Fix the position of the header */
+    z-index: 1000; /* Ensure header appears above other content */
+    top: 0; /* Position the header at the top of the viewport */
+    left: 0; /* Position the header at the left side of the viewport */
+    right: 0;
+    width: auto; /* Set the width to fill the viewport */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #45D440;
+    color: #000000;
+    padding: 10px 20px;
+    height: 100px;
+}
+
+
+/* Rest of your styles remain unchanged */
+.logo {
+    margin: 0;
+    font-size: 20px;
+    width: 70px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Align navbar items vertically */
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+nav ul li a.active {
+    color: #ffffff;
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+.login {
+    display: flex;
+    align-items: center; /* Align login button vertically */
+}
+
+.login a {
+    color: #000000;
+    background-color: #75F5FD;
+    text-decoration: none;
+    padding: 10px 30px; /* Increased padding for the login button */
+    border: 1px solid #75F5FD;
+    border-radius: 20px;
+}
+
+.login :hover {
+    background-color: #75f4fdc7;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 24px;
+        width: auto;
+    }
+
+    nav ul li a {
+        padding: 5px;
+    }
+
+    .login a {
+        padding: 10px;
+    }
+}
+
+
+.mid {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+.mid h1 {
+    font-size: 80px;
+    margin-left: 40px;
+    width: 80px;
+}
+
+.rectangle {
+    width: 30px; /* Adjust width as needed */
+    height: 80px; /* Adjust height as needed */
+    background-color: #45D440; /* Color of the rectangle */
+    margin-left: 30%; /* Margin between the text and rectangle */
+}
+
+.mid p {
+    font-size: 40px;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .mid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mid h1 {
+        font-size: 40px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .rectangle {
+        margin-left: 0;
+    }
+
+    .mid p {
+        font-size: 24px;
+    }
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure footer appears above other content */
+    background-color: #45D440;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 30px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons img {
+    margin-right: 30px;
+    width: 30px; /* Adjust size as needed */
+    margin-left: 10px; /* Adjust spacing between icons */
+}
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: row; /* Switch back to horizontal layout */
+    }
+
+    .footer p {
+        font-size: 20px; /* Further reduce font size for smaller screens */
+        margin: 0; /* Remove margin */
+    }
+}
+
+/*Review*/
+.mid_rev{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.review-form {
+    flex: 0 0 45%;
+}
+
+.review-form h2,
+.reviews h2 {
+    margin-top: 0;
+}
+
+.review-form form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-form label,
+.review-form button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-form button {
+    background-color: #45D440;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.reviews {
+    flex: 0 0 45%;
+}
+
+.review {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review h3 {
+    margin-top: 0;
+}
+
+.rating {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* about us */
+.mid_about {
+    display: flex;
+    
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.about-section {
+    flex: 0 0 100%; /* Each section takes up full width initially */
+    padding: 20px;
+}
+
+.team-member {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 0 0 100%; /* Each team member takes up full width initially */
+}
+
+.team-member h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.team-member p {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+/* Media queries for responsive design */
+@media screen and (min-width: 768px) {
+    .about-section {
+        flex: 0 0 50%; /* Each section takes up half of the available width on screens wider than 768px */
+    }
+
+    .team-member {
+        flex: 0 0 calc(50% - 20px); /* Each team member takes up approximately one-half of the width with some margin between them on screens wider than 768px */
+        margin-right: 20px; /* Add margin between team members */
+    }
+
+    .team-member:last-child {
+        margin-right: 0; /* Remove margin from the last team member to prevent extra space */
+    }
+}
+
+/* dashboard */
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+.sidebar{
+    width: 25%;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 15px;
+    height: 92vh;
+    box-shadow: 0px 0px 3px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.data{
+    width: 60%;
+    border-radius: 3px;
+    height: 80vh;
+    overflow-y: auto;
+}
+.fa-circle{
+    color: orangered;
+}
+.searchbar{
+    width: 60%;
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+input{
+    border: none;
+    outline: none;
+    background: none;
+}
+.glass:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
+#root{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+/* Style for the images container */
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style for each image box */
+.box {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px; /* Set a fixed width */
+    height: 250px; /* Set a fixed height */
+    overflow: hidden; /* Ensure images don't overflow */
+    transition: transform 0.2s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Style for the image */
+.img-box img {
+    width: 100%;
+    height: 100%; /* Ensure image fills container */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+/* Style for the title text */
+.bottom p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* flower */
+.main_flower {
+    width: 100%;
+    max-width: 1200px;
+    margin: 8rem; /* Center the container horizontally */
+    padding: 20px;
+    border: 2px solid #333; /* Add a border around the container */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    background-color: #f5f5f5; /* Fill the box with light grey color */
+}
+
+/* Style for the content container */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the sunflower section */
+.flower {
+    margin-bottom: 20px;
+}
+
+/* Style for the sunflower image */
+.flower img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Style for the headings */
+h2, h3, h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style for the paragraph */
+p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center; /* Center the pagination buttons */
+    flex-wrap: wrap; /* Allow the items to wrap if needed */
+    list-style: none; /* Removes default list styling if using <ul> */
+    padding: 0; /* Removes default padding if using <ul> */
+}
+
+/* Optional: Add some spacing and styling to the buttons for better visibility */
+.pagination button {
+    margin: 0 5px; /* Spacing between buttons */
+    padding: 5px 10px; /* Button padding */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.pagination button.active {
+    background-color: #45D440; /* Active button background color */
+    color: #ffffff; /* Active button text color */
+}
+
+/* Weather */
+.weather-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info > div {
+    margin-bottom: 10px;
+}
+
+#water-message {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* login */
+/* Container styles */
+.container_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Content box styles */
+  .content-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  /* Form styles */
+  form {
+    margin-top: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Switch form styles */
+  .switch-form {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .switch-form a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .switch-form a:hover {
+    text-decoration: underline;
+  }
+  /* Add this CSS to style the image */
+/* Added CSS to set height and width of the image */
+.login-image {
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Add margin to separate image from login box */
+    margin-bottom: 20px; /* Add margin to separate image from content below */
+    width: 30rem; /* Set width of the image */
+    height: 30rem; /* Set height of the image */
+}
+/* Added CSS to style the green bar */
+.green-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20rem; /* Adjust the width of the green bar */
+    height: 100%;
+    background-color: #45D440;
+    z-index: -1; /* To ensure the green bar is behind other content */
+}
+

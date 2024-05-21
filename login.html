@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="favicon.png" href="image/favicon.png">
+</head>
+<body>
+  <div class="container_login">
+    <div class="green-bar"></div> <!-- Added the green bar div -->
+    <img src="image/flower.png" class="login-image">
+    <div class="content-box" id="loginBox">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Email or Phone" >
+            <input type="password" id="loginPassword" placeholder="Password" >
+            <input type="submit" value="Login">
+        </form>
+        <div class="switch-form">Don't have an account? <a href="#" onclick="showSignupForm()">Sign Up</a></div>
+    </div>
+   
+
+
+    <div class="content-box" id="signupBox" style="display:none;">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <input type="text" id="signupName" placeholder="Full Name" >
+            <input type="text" id="signupEmail" placeholder="Email" >
+            <input type="password" id="signupPassword" placeholder="Password" >
+            <input type="submit" value="Sign Up">
+        </form>
+        <div class="switch-form">Already have an account? <a href="#" onclick="showLoginForm()">Login</a></div>
+    </div>
+</div>
+
+  <script src="login.js"></script>
+</body>
+</html>
